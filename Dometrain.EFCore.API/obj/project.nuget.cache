@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "VhM7OF8fGiHNvtSjy2esYi6hicPD3FzMxfXS3qVc4Kxsivc2kIyhzkZ/83pI1i6iQhzqYic4kCTaADVF+UuTzw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sschrauwen\\OneDrive - axxes.com\\Documents\\Axxes\\Zero To Hero EF Core\\03.01\\03.01\\Dometrain.EFCore.API\\Dometrain.EFCore.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sschrauwen\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.0-rc.2.23480.2\\microsoft.aspnetcore.openapi.8.0.0-rc.2.23480.2.nupkg.sha512",
+    "C:\\Users\\sschrauwen\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\sschrauwen\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\sschrauwen\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\sschrauwen\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\sschrauwen\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\sschrauwen\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
