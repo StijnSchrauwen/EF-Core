@@ -27,6 +27,11 @@ public class MoviesController : Controller
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> Get([FromRoute] int id)
     {
+        // Queries database, returns first match, null if not found.
+        // var movie = await _context.Movies.FirstOrDefaultAsync(m => m.Id == id);
+        // Similar to FirstOrDefault, but throws if more than one match is found.
+        // var movie = await _context.Movies.SingleOrDefaultAsync(m => m.Id == id);
+        // Serves match from memory if already fetched, otherwise queries DB.
         var movie = await _context.Movies.FindAsync(id);
         
         return movie == null
@@ -55,9 +60,10 @@ public class MoviesController : Controller
         // movie has no ID
         
         await _context.SaveChangesAsync();
-
+        
         // movie has an ID
 
+        return CreatedAtAction(nameof(Get), new { id = movie.Id }, movie);
     }
     
     [HttpPut("{id:int}")]
@@ -89,9 +95,9 @@ public class MoviesController : Controller
         if (existingMovie is null)
             return NotFound();
 
-        //_context.Movies.Remove(existingMovie);
+        _context.Movies.Remove(existingMovie);
         // _context.Remove(existingMovie);
-        _context.Movies.Remove( new Movie { Id = id });
+        // _context.Movies.Remove( new Movie { Id = id });
 
         await _context.SaveChangesAsync();
 
